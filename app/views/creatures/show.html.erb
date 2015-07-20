@@ -1,0 +1,13 @@
+<h2>a log from the BOG</h2>
+
+<%= link_to "&larr; back".html_safe, creatures_path %>
+
+<div class="well">
+  <em>
+    name: <%= @creature.name %> |
+    log date: <%= @creature.created_at %>
+  </em>
+  <p>
+  description: <%= @creature.description %>
+  </p>
+</div>

@@ -1,0 +1,16 @@
+
+<h2 id="bog-title">BOGlog
+<%= link_to "", new_creature_path, class: 'btn btn-primary btn-xs glyphicon glyphicon-plus pull-right' %></h2>
+
+<% @creatures.each do |creature| %>
+
+<div id="bogtent" class="well">
+<%= link_to "", creature, class: 'btn btn-info btn-xs glyphicon glyphicon-zoom-in pull-right' %>
+<%= link_to "", edit_creature_path(creature), class: 'btn btn-warning btn-xs glyphicon glyphicon-edit pull-right' %>
+<%= link_to "", creature, method: :delete, class: 'btn btn-danger btn-xs glyphicon glyphicon-remove pull-right' %>
+<em><%= creature.name %></em>
+<p><%= creature.description %></p>
+
+
+</div>
+<% end %>
