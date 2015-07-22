@@ -1,0 +1,7 @@
+<h1>#<%= @tag.name %></h1>
+
+<% @tag.creatures.each do |creature| %>
+  <div class="well">
+    <h4><%= link_to creature.name, creature %></h4>
+  </div>
+   <% end %>

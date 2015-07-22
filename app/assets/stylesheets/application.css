@@ -14,24 +14,3 @@
  *= require_self
  */
 
- body {
-  background-image: url(http://i.imgur.com/1Unju0D.jpg);
-}
-a{
-  color: #F6F6F6;
-  margin-left: 20px;
-}
- .navbar{
-
-  border: none;
-  color: #F6F6F6;
-}
-
-#bog-title{
-    color: #F6F6F6;
-}
-.well{
-  background-color: #191919;
-  color: #F6F6F6;
-  border: none;
-}

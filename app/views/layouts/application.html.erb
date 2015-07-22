@@ -6,7 +6,7 @@
   <link rel="stylesheet" media="screen" href="//netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <script src="//code.jquery.com/jquery.js"></script>
   <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-
+  <link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -20,10 +20,13 @@
     <ul class="nav navbar-right">
       <%= link_to "home", root_path %>
       <%= link_to "BOGlog", creatures_path %>
+      <%= link_to "#TAGpoles", tags_path %>
     </ul>
     </div>
 </nav>
 
- <%= yield %>
+  <div id="bogtent" class="container">
+    <%= yield %>
+  </div>
 </body>
 </html>

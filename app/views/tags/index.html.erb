@@ -1,0 +1,10 @@
+<%= render "shared/flash" %>
+<h1>#TAGpoles<%= link_to "", new_tag_path, class: 'btn btn-info btn-xs glyphicon glyphicon-plus pull-right' %></h1>
+
+<% @tags.each do |tag| %>
+  <div class="well">
+    <%= link_to "", tag,method: :delete, class: 'btn btn-danger btn-xs glyphicon glyphicon-remove pull-right' %>
+    <h4>#<%= link_to tag.name, tag %></h4>
+  </div>
+  <% end %>
+
